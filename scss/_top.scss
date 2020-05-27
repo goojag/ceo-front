@@ -1,0 +1,44 @@
+header{
+    background:$themecolor2; padding:30px 0;
+    display:flex;
+
+    .logo{
+       width:140px; display: inline-block;
+    }
+
+    .menu-top{
+        width:300px; display: inline-block;
+        font-family: 'Quicksand';
+
+        ul{
+            display:flex;
+
+            li{
+                list-style: none;
+                margin:0 20px;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .social-top{
+        a{
+            display: inline-block;
+
+            i{
+                display:block;
+                width:26px; height: 26px;
+
+                &.line-icon{
+                   background:url('../images/icons/icon-line.svg') no-repeat;
+                }
+                &.fb-icon{
+                   background:url('../images/icons/icon-facebook.svg') no-repeat;
+                }
+                &.yt-icon{
+                   background:url('../images/icons/icon-youtube.svg') no-repeat;
+                }
+            }
+        }
+    }
+}
