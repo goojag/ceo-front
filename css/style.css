@@ -588,8 +588,17 @@ header .social-top a i.yt-icon {
   background: url("../images/icons/icon-youtube.svg") no-repeat;
 }
 
+.slick .slick-dots li {
+  margin: 0;
+}
+
 .slick .slick-active {
-  width: 30px;
+  width: 50px;
+}
+
+.slick .slick-active button {
+  width: auto;
+  display: block;
 }
 
 .slick .slick-active button:before {

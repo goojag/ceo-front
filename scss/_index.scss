@@ -1,8 +1,17 @@
 .slick{
+
+    .slick-dots{
+        li{
+            margin:0;
+        }
+    }
+
     .slick-active{
-        width:30px;
+        width:50px;
 
         button{
+            width:auto; display: block;
+
             &:before{
                 content:'';
                 width:100%;
