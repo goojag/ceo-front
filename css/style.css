@@ -76,7 +76,7 @@ body, html {
 }
 
 body {
-  background: #fff;
+  background: url("../images/bg.jpg") no-repeat center bottom fixed;
   background-size: cover;
   font: 400 1rem/1.5 'Quicksand', sans-serif, tahoma;
   color: #5C5C5C;
