@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>CEO 2020</title>
 
@@ -274,7 +275,8 @@
     <script>
         $(function(){
             $('.slick').slick({
-                dots: true
+                dots: true,
+                arrows: false
             });
 
             $('.recomened .ul').slick({
