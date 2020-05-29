@@ -18,6 +18,7 @@ form {
         width:100%;
         box-sizing: border-box;
         padding:0 20px;
+        outline: none;
     }
 
     .select-box{
@@ -31,6 +32,7 @@ form {
             vertical-align: middle;
             position: relative;
             z-index: 1;
+            outline: none;
         }
 
         &:after{

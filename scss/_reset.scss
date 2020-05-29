@@ -2,14 +2,13 @@
 
 body,html{margin:0; padding:0;}
 body{
-	background:url('../images/bg.jpg') no-repeat center bottom fixed;
+	background:url('../images/bg.jpg') no-repeat center top fixed;
 	background-size:cover;
 	font:400 1.2rem/1.5 'Athiti', sans-serif, tahoma;
 	color:$textcolor;
 	font-display: swap;
 	position: relative; 
 	min-height: 100vh;
-	padding-bottom:150px;
 }
 
 ul{
