@@ -76,14 +76,13 @@ body, html {
 }
 
 body {
-  background: url("../images/bg.jpg") no-repeat center bottom fixed;
+  background: url("../images/bg.jpg") no-repeat center top fixed;
   background-size: cover;
   font: 400 1.2rem/1.5 'Athiti', sans-serif, tahoma;
   color: #5C5C5C;
   font-display: swap;
   position: relative;
   min-height: 100vh;
-  padding-bottom: 150px;
 }
 
 ul {
@@ -167,7 +166,7 @@ table {
   white-space: nowrap;
 }
 
-.two-clamp, .article-list .li .article-title {
+.two-clamp, .article-list .li .article-title, .latest-story .li .article-title {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -489,6 +488,7 @@ form input[type=text], form input[type=email], form input[type=password], form i
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 20px;
+  outline: none;
 }
 
 form .select-box {
@@ -505,6 +505,7 @@ form .select-box select {
   vertical-align: middle;
   position: relative;
   z-index: 1;
+  outline: none;
 }
 
 form .select-box:after {
@@ -1023,6 +1024,62 @@ header .social-top a i.yt-icon {
 
 .article-list .li a {
   color: #5C5C5C;
+}
+
+.latest-story .li {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.latest-story .li a {
+  color: #5C5C5C;
+}
+
+.latest-story .li .article-title {
+  font-size: 1.15rem;
+  margin: 8px 0;
+  color: #24272E;
+}
+
+.latest-story .li .article-date {
+  font-size: 0.8rem;
+  border-bottom: 2px solid #CFA061;
+  padding-bottom: 20px;
+}
+
+.fb-fan, .line-banner {
+  width: 85%;
+  float: right;
+}
+
+.fb-fan iframe, .fb-fan img, .fb-fan a, .line-banner iframe, .line-banner img, .line-banner a {
+  width: 100%;
+}
+
+.line-banner {
+  margin-top: 20px;
+}
+
+.footer-banner {
+  padding: 0 0 30px;
+}
+
+.footer-banner ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.footer-banner ul li {
+  list-style: none;
+}
+
+.footer-banner ul li a, .footer-banner ul li img {
+  display: block;
+  width: 100%;
 }
 
 .product-list {
