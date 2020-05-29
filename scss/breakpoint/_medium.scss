@@ -6,104 +6,36 @@
         max-height:56.25vw;
     }
 
-    .box-center{
-        position: static;
-        margin:0;
-    }
+    header{
+        padding-bottom:60px;
+        position: relative;
 
-    .our-mission, .home-project, .home-ouroffice{
-        flex-wrap: wrap;
-        margin-top:50px;
-
-        .left, .right {
-            width:100%;
-
-            strong{
-                font-size:2rem;
-                margin-bottom:5px;
-            }
+        .logo{
+            width:120px;
         }
 
-        .right{
-            margin-top:20px;
 
-            
-        }
-    }
+        .menu-top{
+            position: absolute;
+            bottom:10px; left:0;
+            width:95%; right:0;
+            margin:auto;
 
-    .our-mission{
-        .left{
-            font-size:1.2rem;
-
-            span{
-                &:last-child{
-                    font-size:2rem;
-                }
-            }
-        }
-
-        .right{
-            margin-top:0;
-        }
-    }
-
-    .home-project{
-        background:$themecolor;
-
-        .right{
-            color:#fff; padding:0 20px 20px;
-        }
-    }
-
-    .menu-tab{
-        padding:10px 0; position: relative;
-
-        .tab-mobile{
-            // display: block;
-
-            &.clicked{
-                &:before{
-                    @include svgmask('/images/icons/icon-close.svg', #CB6161);
-                    width:23px; height: 23px;
-                }
-            }
-        }
-
-        ul{
-            // left:-100%; position: absolute;
-            // overflow: hidden;
-            // transition:ease-in-out 300ms;
-            // flex-wrap: wrap; width:300px;
-            // justify-content: left; top:65px;
-            // background:rgba(255,255,255,0.95);
-
-            flex-wrap: wrap;
-
-            &.show{
-                left:0;
-                
-            }
-
-            li{
-                width:50%; font-size:0.9rem;
-                text-align:center;
-
-                &:first-child{
-                    a{
-                        border-left:none;
-                    }
-                }
-
-                a{
-                    border:none; width:100%;
-                    padding:8px 20px;
-                }
+            ul{
+                justify-content: space-between;
             }
         }
     }
 
-    .product-list{
-        grid-template-columns: repeat(3,1fr);
+    .slick{
+        margin:50px 0; clear: both;
+
+        &:before{
+            display: none;
+        }
     }
 
+    .map-zone{
+        margin:30px 0 0;
+    }
 }

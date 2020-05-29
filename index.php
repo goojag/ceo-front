@@ -2,19 +2,28 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CEO 2020</title>
+    <title>CEO 2020</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="css/style.css?v=<?=time()?>">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css?v=<?=time()?>">
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </head>
 
 <body>
 
-    <header class="top">
+    <header class="top wow bounceInDown">
         <div class="container">
 
             <a href="#" class="logo">
@@ -38,7 +47,7 @@
         </div>
     </header>
 
-    <section class="slide">
+    <section class="slide wow bounceInUp">
         <div class="container">
             <div class="slick">
                 <div class="li"><img src="images/banner.jpg" alt=""></div>
@@ -50,13 +59,13 @@
     </section>
 
 
-    <section class="map-zone">
+    <section class="map-zone ">
         <div class="container">
-            <div class="map-iframe">
+            <div class="map-iframe wow bounceInLeft">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3751.751319381254!2d99.83081400000002!3d19.89272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDUzJzMzLjgiTiA5OcKwNDknNTEuMCJF!5e0!3m2!1sen!2sus!4v1590634723742!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
 
-            <div class="map-form">
+            <div class="map-form wow bounceInRight">
                 <form action="">
                     <div class="p">
                         <div class="select-box">
@@ -124,7 +133,7 @@
     </section>
 
 
-    <section class="info-subscrib">
+    <section class="info-subscrib wow bounceInUp">
         <div class="info-box">
             <h2>ต้องการรับข้อมูล Property Matching </h2>
             <div class="row">
@@ -140,7 +149,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <a href="" class="btn-line">
+                    <a href="https://lin.ee/9SxEr27" target="_blank" class="btn-line">
                         <span>เพิ่มเพื่อน ไลน์  : </span>
                         <img src="images/icons/icon-line-offic.png" alt="">
                         <span>Property Analyst</span>
@@ -150,7 +159,7 @@
         </div>
     </section>
 
-    <section class="icon-zone">
+    <section class="icon-zone wow bounceInUp">
         <div class="container">
             <ul>
                 <li><a href=""><img src="images/icons/icon-1.png" alt=""></a></li>
@@ -162,7 +171,7 @@
     </section>
 
 
-    <section class="recomened list">
+    <section class="recomened list wow bounceInUp">
         <div class="container">
             <h2 class="h-section">โครงการแนะนำสำหรับคุณ</h2>
 
@@ -186,7 +195,7 @@
         </div>
     </section>
 
-    <section class="article list">
+    <section class="article list wow bounceInUp">
         <div class="container">
             <h2 class="h-section">บทความแนะนำ</h2>
 
@@ -210,10 +219,10 @@
     </section>
 
 
-    <div class="container">
+    <div class="container my-5 wow bounceInUp">
         <div class="row">
             <div class="col-md-8">
-                <h2 class="h-section">บทความแนะนำ</h2>
+                <h2 class="h-section">LATEST STORIES</h2>
                 <section class="latest-story row">
                     <?php for($i=1;$i<7;$i++) { ?>
                         <div class="li col-md-6">
@@ -226,21 +235,48 @@
                     <?php } ?>
                 </section>
             </div>
+
+            <div class="col-md-4">
+                <section class="fb-fan">
+                    <img src="images/facebook.jpg" alt="">
+                </section>
+
+                <a target="_blank" href="https://lin.ee/9SxEr27" class="line-banner">
+                    <img src="images/line-banner.jpg" alt="">
+                </a>
+            </div>
         </div>
     </div>
 
+
+    <section class="footer-banner wow bounceInUp">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href=""><img src="images/300x300.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/300x300.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/300x300.jpg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
 
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 
     <script>
         $(function(){
             $('.slick').slick({
-                dots: true
+                dots: true,
+                arrows: false
             });
 
             $('.recomened .ul').slick({
