@@ -166,7 +166,7 @@ table {
   white-space: nowrap;
 }
 
-.two-clamp, .article-list .li .article-title, .latest-story .li .article-title {
+.two-clamp, .article-list .li .article-title, .latest-story .li .article-title, .card-news .card-title {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -1085,6 +1085,27 @@ header .social-top a i.yt-icon {
 .footer-banner ul li a, .footer-banner ul li img {
   display: block;
   width: 100%;
+}
+
+.card-news .card-title {
+  margin: 10px 0 0;
+  color: #444;
+}
+
+.card-news .card-date {
+  font-size: 0.8rem;
+  color: #444;
+  margin: 5px 0 0;
+  font-weight: 200;
+}
+
+.card-news a, .card-news img {
+  display: block;
+  width: 100%;
+}
+
+.card-news a {
+  color: #5C5C5C;
 }
 
 .product-list {

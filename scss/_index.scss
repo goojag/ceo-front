@@ -430,3 +430,26 @@
         }
     }
 }
+
+.card-news{
+    .card-title{
+        margin:10px 0 0;
+        color:#444;
+        @extend .two-clamp;
+    }
+
+    .card-date{
+        font-size:0.8rem;
+        color:#444;
+        margin:5px 0 0;
+        font-weight: 200;
+    }
+
+    a, img{
+        display: block; width:100%;
+    }
+
+    a{
+        color:$textcolor;
+    }
+}
