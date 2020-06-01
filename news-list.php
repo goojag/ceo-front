@@ -86,7 +86,22 @@
                 slidesToScroll: 1,
                 prevArrow: $('.article .prev'),
                 nextArrow: $('.article .next'),
-                centerMode: true
+                centerMode: true,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 899,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
             });
         });
     </script>

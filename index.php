@@ -240,7 +240,8 @@
         $(function(){
             $('.slick').slick({
                 dots: true,
-                arrows: false
+                arrows: false,
+                autoplay: true
             });
 
             $('.recomened .ul').slick({
@@ -250,6 +251,7 @@
                 prevArrow: $('.recomened .prev'),
                 nextArrow: $('.recomened .next'),
                 centerMode: true,
+                autoplay: true,
                 responsive: [
                     {
                         breakpoint: 899,
@@ -273,6 +275,7 @@
                 prevArrow: $('.article .prev'),
                 nextArrow: $('.article .next'),
                 centerMode: true,
+                autoplay:true,
                 responsive: [
                     {
                         breakpoint: 899,
