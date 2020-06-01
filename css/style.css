@@ -1702,6 +1702,9 @@ footer .foot-social li a.youtube:hover {
   .contact-box .contact-frm .btn1, .contact-box .contact-frm .btn-viewall {
     width: 47%;
   }
+  .contact-box .contact-frm input.txt-s {
+    float: left;
+  }
 }
 
 @media only screen and (max-width: 599px) {
