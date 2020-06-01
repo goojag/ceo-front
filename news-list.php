@@ -7,7 +7,7 @@
 
 </head>
 
-<body>
+<body onLoad="menu(3)">
 
     <?php include('inc/top.php'); ?>
 

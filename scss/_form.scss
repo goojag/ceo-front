@@ -21,6 +21,16 @@ form {
         outline: none;
     }
 
+    textarea{
+        border:none;
+        background:$inputcolor; height: 80px;
+        border-radius: 20px;
+        width:100%;
+        box-sizing: border-box;
+        padding:10px 20px;
+        outline: none;
+    }
+
     .select-box{
         position: relative;
 
