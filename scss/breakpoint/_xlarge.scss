@@ -1,12 +1,13 @@
 
 @include breakpoint(xlarge) {
 	.container{
-        width:100%; max-width: 100%;
+        width:100%; max-width: 100%; 
     }
 
     .info-subscrib {
         .info-box{
             width:100%;
+            overflow: hidden;
         }
     }
 }

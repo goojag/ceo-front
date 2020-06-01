@@ -101,7 +101,7 @@
         <div class="info-box">
             <h2>ต้องการรับข้อมูล Property Matching </h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <form action="" class="row">
                         <div class="col-9">
                             <input type="text" placeholder="กรุณาระบุอีเมล์">
@@ -112,7 +112,7 @@
                     </form>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <a href="https://lin.ee/9SxEr27" target="_blank" class="btn-line">
                         <span>เพิ่มเพื่อน ไลน์  : </span>
                         <img src="images/icons/icon-line-offic.png" alt="">
@@ -249,7 +249,21 @@
                 slidesToScroll: 1,
                 prevArrow: $('.recomened .prev'),
                 nextArrow: $('.recomened .next'),
-                centerMode: true
+                centerMode: true,
+                responsive: [
+                    {
+                        breakpoint: 899,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
             });
 
             $('.article .ul').slick({
@@ -258,7 +272,21 @@
                 slidesToScroll: 1,
                 prevArrow: $('.article .prev'),
                 nextArrow: $('.article .next'),
-                centerMode: true
+                centerMode: true,
+                responsive: [
+                    {
+                        breakpoint: 899,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
             });
         });
     </script>

@@ -22,7 +22,28 @@
 
             iframe{
                 height: 500px;
+                max-height: none;
+            }
+        }
+
+        .map-form{
+            width:100%;
+            padding:20px 15px 5px;
+
+            .txt-m{
+                width:80%;
             }
         }
     }
+    
+
+    .btn-line{
+        margin-top:20px;
+    }
+
+    .slide-arrows{
+        display:none;
+    }
+
+    
 }
