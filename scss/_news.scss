@@ -1,0 +1,25 @@
+.article-date{
+    font-size:0.9rem;
+    margin:0; font-style: italic;
+    color:#aaa;
+
+    &:before{
+        content:'';
+        @include svgmask('../images/icons/icon-time.svg', #aaa);
+        width:17px; height: 17px;
+        display:inline-block;
+        vertical-align: middle;
+        margin-right:5px;
+    }
+}
+
+.h-page{
+    font-size:2rem;
+}
+
+.article-detail{
+    img{
+        border:1px solid $themecolor;
+        margin:15px 0; display: block;
+    }
+}
